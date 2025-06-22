@@ -47,19 +47,16 @@ This project recreates the logic and interaction of Scratch while introducing ne
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **GNU General Public License v3.0**.
 
-You are free to use and modify this code — even in commercial or educational projects — **as long as you give appropriate credit**.
+You are free to use, study, and modify this project for personal or educational purposes.  
+However, if you distribute your own version, you must:
 
-### ✨ Attribution Required:
-Please include a mention like:
+- Provide credit to the original author: “Based on ScratchRebuilt by [K Ajay](https://github.com/Clean1Code)”
+- Make your version open source under the same license
 
-> “Based on ScratchRebuilt by [Ajay K](https://github.com/yourusername)”  
-> or keep the license notice in your project.
+🔗 [Read the full license here](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-> 🚫 Do **not** redistribute this project without crediting the original author.
-
----
 
 ## 🙋‍♂️ About the Author
 
