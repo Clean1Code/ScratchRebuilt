@@ -63,7 +63,7 @@ Please include a mention like:
 
 ## 🙋‍♂️ About the Author
 
-I'm Ajay K — a dual-degree ECE + VLSI student with a strong interest in algorithms, systems, and visual logic tools.  
+I'm K Ajay — a dual-degree ECE + VLSI student with a strong interest in algorithms, systems, and visual logic tools.  
 This project is part of my self-learning journey to understand interpreter design, event systems, and browser UI architecture — while reimagining the experience of Scratch from scratch.
 
 ---
@@ -75,6 +75,3 @@ This is currently a personal learning project, but if you're interested in helpi
 ---
 
 ## 🔗 Links
-
-- [Live Demo (optional via GitHub Pages)](https://yourusername.github.io/ScratchRebuilt/)
-- [GitHub Repo](https://github.com/yourusername/ScratchRebuilt)
