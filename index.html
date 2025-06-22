@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mini Scratch</title>
+    <link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class = "window">
+        <div class = "menu-bar">Scratch</div>
+
+        <div class = "top-bar">
+            <div class = "workspace-type">
+                <button class = "code top-bar-button top-bar-button-clicked">Code</button>
+                <button class = "costumes top-bar-button">Costumes</button>
+                <button class = "sounds top-bar-button">Sounds</button>
+            </div>
+        </div>
+
+        <div class = "interface code active">
+            <div class = "side-bar">
+                <button class = "block-type-button block-type-button-clicked">
+                    <div class="circle blue"></div>
+                    Motion
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle violet"></div>
+                    Looks
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle purple"></div>
+                    Sound
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle yellow"></div>
+                    Events
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle yellow-brown"></div>
+                    Control
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle cyan"></div>
+                    Sensing
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle green"></div>
+                    Operators
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle orange"></div>
+                    Variables
+                </button>
+                <button class = "block-type-button">
+                    <div class="circle pink-red"></div>
+                    My Blocks
+                </button>
+            </div>
+            <div class = "blocks">
+                <div class="block-middle blue" draggable="true" data-code="move">Move 10 Steps</div>
+            </div>
+            <div class = "workspace">Workspace</div>
+        </div>
+
+        <div class = "interface costumes">
+            <div>Costume</div>
+        </div>
+
+        <div class = "interface sounds">
+            <div>Sound</div>
+        </div>
+
+        <div class = "debugger"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

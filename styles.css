@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Segoe UI', 'sans-serif';
+}
+
+:root {
+    --block-width: 200px;
+    --block-height: 35px;
+    --block-cut-y: 5px;
+    --block-cut-x: 3px;
+    --block-cut-x-width: 10px;
+    --block-cut-start: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen */
+}
+
+.menu-bar {
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+    color: White;
+    background: rgb(133, 92, 214);  
+}
+
+
+.top-bar {
+    width: 100%;
+    background: rgb(230, 240, 255);
+    display: grid;
+}
+
+.top-bar-button {
+    height: 35px;
+    background-color: rgb(197, 207, 222, 0.704); /* initial blue */
+    color:rgb(139, 147, 156);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    margin: 10px -1px 0 0;
+
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 0 1px rgb(139, 147, 156);
+}
+
+.top-bar-button-hover {
+    background-color: rgb(217, 227, 242);
+}
+
+.top-bar-button-clicked {
+    background-color: white; /* red on click */
+    color: rgb(133, 92, 214);
+}
+
+.block-type-button {
+    border: none;
+    cursor: pointer;
+    width: 65px;
+    height: 50px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.block-type-button:hover {
+    color: rgb(78, 149, 230);
+}
+
+.block-type-button-clicked {
+    background-color: rgb(197, 207, 222, 0.704);
+}
+
+.interface{
+    display: none;
+}
+
+/* Important */
+.interface.active {
+    display: flex;
+    flex: 1; /* Fills remaining screen space */
+    overflow: hidden; /* Prevent scroll from children leaking out */
+}
+
+.blocks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    max-width: 300px;
+    background-color: rgb(244, 244, 244);
+}
+
+
+.side-bar {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    
+    border: 1px solid rgb(139, 147, 156);
+    background-color: white;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.block-middle {
+    width: fit-content;
+    height: var(--block-height);
+    
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5px var(--block-cut-y) 5px;
+    cursor: grab;
+    font-family: 'Segoe UI';
+
+
+    clip-path: polygon(var(--block-cut-start) 0, calc(var(--block-cut-start) + var(--block-cut-x)) var(--block-cut-y), 
+                        calc(var(--block-cut-start) + var(--block-cut-x) + var(--block-cut-x-width)) var(--block-cut-y), 
+                        calc(var(--block-cut-start) + 2*var(--block-cut-x) + var(--block-cut-x-width)) 0px, 100% 0, 100% calc(100% - var(--block-cut-y)), 
+                        calc(var(--block-cut-start) + 2*var(--block-cut-x) + var(--block-cut-x-width)) calc(100% - var(--block-cut-y)), 
+                        calc(var(--block-cut-start) + var(--block-cut-x) + var(--block-cut-x-width)) 100%, 
+                        calc(var(--block-cut-start) + var(--block-cut-x)) 100%, 
+                        var(--block-cut-start) calc(100% - var(--block-cut-y)), 0 calc(100% - var(--block-cut-y)), 0 0);
+}
+
+.blue {
+    background-color:#4C97FF;
+}
+
+.violet {
+    background-color:blueviolet;
+}
+
+.purple {
+    background-color:purple;
+}
+
+.yellow {
+    background-color:rgb(255, 230, 0);
+}
+
+.yellow-brown {
+    background-color:rgb(231, 188, 17);
+}
+
+.cyan {
+    background-color:rgb(0, 169, 169);
+}
+
+.green {
+    background-color:rgb(42, 188, 42);
+}
+
+.orange {
+    background-color:darkorange;
+}
+
+.pink-red {
+    background-color:deeppink;
+}
