@@ -46,12 +46,5 @@ This project recreates the logic and interaction of Scratch while introducing ne
 ---
 
 
-##  About the Author
-
-I'm K Ajay — a dual-degree ECE + VLSI student with a strong interest in algorithms, systems, and visual logic tools.  
-This project is part of my self-learning journey to understand interpreter design, event systems, and browser UI architecture — while reimagining the experience of Scratch from scratch.
-
----
-
 ##  Links
 Live demo: https://clean1code.github.io/ScratchRebuilt/
