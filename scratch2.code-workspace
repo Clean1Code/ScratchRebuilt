@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../tem2"
+		},
+		{
+			"path": "../tem"
+		},
+		{
+			"path": "../LoopStation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "scratch"
+	}
+}

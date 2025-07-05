@@ -1,3 +1,5 @@
+import { createBlocks } from './blocks.js';
+
 const topBarButtons = document.getElementsByClassName('top-bar-button');
 const interfaces = document.getElementsByClassName('interface');
 const blockTypeButtons = document.getElementsByClassName('block-type-button');
@@ -41,3 +43,5 @@ for(let button of blockTypeButtons) {
         button.classList.toggle('block-type-button-clicked');
     })
 }
+
+createBlocks();

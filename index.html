@@ -6,6 +6,8 @@
     <link rel="stylesheet" href = "styles.css">
 </head>
 <body>
+    <div id="debug" style="position:fixed; bottom:0; left:0; background:#222; color:#0f0; font-family:monospace; padding:10px; max-height:150px; overflow:auto;"></div>
+
     <div class = "window">
         <div class = "menu-bar">Scratch</div>
 
@@ -56,10 +58,11 @@
                     My Blocks
                 </button>
             </div>
-            <div class = "blocks">
-                <div class="block-middle blue" draggable="true" data-code="move">Move 10 Steps</div>
+            <div class = "blocks-available">
+                <!-- Block list will be appended here dynamically div class="block-middle blue" data-code="move" -->
             </div>
             <div class = "workspace">Workspace</div>
+
         </div>
 
         <div class = "interface costumes">
@@ -72,6 +75,6 @@
 
         <div class = "debugger"></div> 
     </div>
-    <script src="script.js"></script>
+    <script type = "module" src="script.js"></script>
 </body>
 </html>
